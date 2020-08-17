@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NoBroker testing Automation Suite">
+	
+	<test name="NoBroker App Test Cases for iPhone">
+		<parameter name="deviceName" value=""></parameter>
+			<parameter name="port" value="4726"></parameter> 
+		<classes>
+			 <class name="com.NoBroker.testPages.HomePageTest"></class>
+			 <class name="com.NoBroker.testPages.BuyPropertyPageTest"></class>
+			 <class name="com.NoBroker.testPages.SignUpPageTest"></class>
+		 	 <class name="com.NoBroker.testPages.PropertyAdPageTest"></class>
+		 	 <class name="com.NoBroker.testPages.ClickAndEarnPageTest"></class>
+		 	 <class name="com.NoBroker.testPages.PayRentPageTest"></class>
+			 <class name="com.NoBroker.testPages.NotificationsPageTest"></class>
+		</classes>
+	</test>
+</suite>

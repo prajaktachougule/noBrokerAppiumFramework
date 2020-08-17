@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NoBroker testing Automation Suite]">
+  <test thread-count="5" name="NoBroker App Test Cases for iPhone(failed)">
+    <parameter name="port" value="4726"/>
+    <parameter name="deviceName" value=""/>
+    <classes>
+      <class name="com.NoBroker.testPages.HomePageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="verifyPayRentFetureDisplayed"/>
+          <include name="Setup"/>
+          <include name="initializationNoBroker"/>
+          <include name="verifyNoBrokerLogoDisplayed"/>
+          <include name="setUp"/>
+          <include name="verifyClickNEarnFetureDisplyed"/>
+          <include name="verifyPackersNMoversfetureDisplayed"/>
+          <include name="testDataSetup"/>
+        </methods>
+      </class> <!-- com.NoBroker.testPages.HomePageTest -->
+      <class name="com.NoBroker.testPages.PayRentPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="setUp"/>
+          <include name="Setup"/>
+          <include name="initializationNoBroker"/>
+          <include name="VerifyPayRentPageDisplayed"/>
+          <include name="testDataSetup"/>
+        </methods>
+      </class> <!-- com.NoBroker.testPages.PayRentPageTest -->
+      <class name="com.NoBroker.testPages.NotificationsPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="Setup"/>
+          <include name="initializationNoBroker"/>
+          <include name="verifyNotificationsPage"/>
+          <include name="setUp"/>
+          <include name="verifyInboxDisplayed"/>
+          <include name="testDataSetup"/>
+          <include name="verifyUserTitle"/>
+        </methods>
+      </class> <!-- com.NoBroker.testPages.NotificationsPageTest -->
+      <class name="com.NoBroker.testPages.SignUpPageTest">
+        <methods>
+          <include name="ensureErrorPopUpMessageOnNullTextBox"/>
+          <include name="endReport"/>
+          <include name="Setup"/>
+          <include name="initializationNoBroker"/>
+          <include name="verifyUserNameAndEmail"/>
+          <include name="setUp"/>
+          <include name="verifySignUpWithValidValue"/>
+          <include name="verifySignUpWithInvalidValue"/>
+          <include name="testDataSetup"/>
+          <include name="verifySignUpTitle"/>
+        </methods>
+      </class> <!-- com.NoBroker.testPages.SignUpPageTest -->
+      <class name="com.NoBroker.testPages.BuyPropertyPageTest">
+        <methods>
+          <include name="verifySearchLocality"/>
+          <include name="verifyPriceRange"/>
+          <include name="Setup"/>
+          <include name="verifySheduleVisit"/>
+          <include name="verifyListOfCityDropdown"/>
+          <include name="verifyIncludeNearByPropertiesCheckbox"/>
+          <include name="verifyAvailableTimeSlot"/>
+          <include name="verifyClosePropertyPage"/>
+          <include name="testDataSetup"/>
+          <include name="verifyCloseVisitPage"/>
+          <include name="endReport"/>
+          <include name="initializationNoBroker"/>
+          <include name="verifyNoOfBedrooms"/>
+          <include name="verifypropertyStatus"/>
+          <include name="verifyShortlistProperty"/>
+          <include name="setUp"/>
+          <include name="verifyPropertiesDescriptionDispaly"/>
+        </methods>
+      </class> <!-- com.NoBroker.testPages.BuyPropertyPageTest -->
+      <class name="com.NoBroker.testPages.ClickAndEarnPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="Setup"/>
+          <include name="initializationNoBroker"/>
+          <include name="verifyClickAndEarnPageTitle"/>
+          <include name="testDataSetup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.NoBroker.testPages.ClickAndEarnPageTest -->
+      <class name="com.NoBroker.testPages.PropertyAdPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="verifyEditPropertyAd"/>
+          <include name="verifyEnablePropertyForLeaseToNo"/>
+          <include name="Setup"/>
+          <include name="initializationNoBroker"/>
+          <include name="checkPostFreePropertyAdTitle"/>
+          <include name="checkUploadPhoto"/>
+          <include name="verifyExitPostingAlert"/>
+          <include name="setUp"/>
+          <include name="verifyFinishPostingButtonDisplayed"/>
+          <include name="testDataSetup"/>
+        </methods>
+      </class> <!-- com.NoBroker.testPages.PropertyAdPageTest -->
+    </classes>
+  </test> <!-- NoBroker App Test Cases for iPhone(failed) -->
+</suite> <!-- Failed suite [NoBroker testing Automation Suite] -->

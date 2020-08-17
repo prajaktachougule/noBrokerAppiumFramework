@@ -1,0 +1,1616 @@
+<html>
+<head>
+<title>TestNG:  NoBroker App Test Cases for iPhone</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>NoBroker App Test Cases for iPhone</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/33</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 17 20:21:47 GMT+05:30 2020</td>
+</tr>
+<tr><td>Total time:</td><td>52 seconds (52635 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.NoBroker.testPages.NotificationsPageTest.setUp()'><b>setUp</b><br>Test class: com.NoBroker.testPages.NotificationsPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1161148117", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1161148117'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>29</td>
+<td>com.NoBroker.testPages.NotificationsPageTest@306279ee</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.NoBroker.testPages.PayRentPageTest.setUp()'><b>setUp</b><br>Test class: com.NoBroker.testPages.PayRentPageTest</td>
+<td></td>
+<td>-1597675958</td>
+<td>com.NoBroker.testPages.PayRentPageTest@545997b1</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.ClickAndEarnPageTest.setUp()'><b>setUp</b><br>Test class: com.NoBroker.testPages.ClickAndEarnPageTest</td>
+<td></td>
+<td>-1597675958</td>
+<td>com.NoBroker.testPages.ClickAndEarnPageTest@4cf4d528</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.PropertyAdPageTest.setUp()'><b>setUp</b><br>Test class: com.NoBroker.testPages.PropertyAdPageTest</td>
+<td></td>
+<td>-1597675958</td>
+<td>com.NoBroker.testPages.PropertyAdPageTest@77846d2c</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.NoBroker.testPages.SignUpPageTest</td>
+<td></td>
+<td>-1597675958</td>
+<td>com.NoBroker.testPages.SignUpPageTest@548ad73b</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.setUp()'><b>setUp</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td></td>
+<td>-1597675958</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.NoBroker.testPages.PayRentPageTest.VerifyPayRentPageDisplayed()'><b>VerifyPayRentPageDisplayed</b><br>Test class: com.NoBroker.testPages.PayRentPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1760219993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1760219993'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.PayRentPageTest@545997b1</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.PropertyAdPageTest.checkPostFreePropertyAdTitle()'><b>checkPostFreePropertyAdTitle</b><br>Test class: com.NoBroker.testPages.PropertyAdPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace269892014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace269892014'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.PropertyAdPageTest@77846d2c</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.PropertyAdPageTest.checkUploadPhoto()'><b>checkUploadPhoto</b><br>Test class: com.NoBroker.testPages.PropertyAdPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1141113940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1141113940'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.PropertyAdPageTest@77846d2c</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.SignUpPageTest.ensureErrorPopUpMessageOnNullTextBox()'><b>ensureErrorPopUpMessageOnNullTextBox</b><br>Test class: com.NoBroker.testPages.SignUpPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace888611662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace888611662'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.SignUpPageTest@548ad73b</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.HomePageTest.setUp()'><b>setUp</b><br>Test class: com.NoBroker.testPages.HomePageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace790094605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace790094605'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.HomePageTest@78186a70</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifyAvailableTimeSlot()'><b>verifyAvailableTimeSlot</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1233595751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1233595751'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.ClickAndEarnPageTest.verifyClickAndEarnPageTitle()'><b>verifyClickAndEarnPageTitle</b><br>Test class: com.NoBroker.testPages.ClickAndEarnPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace649769713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace649769713'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.ClickAndEarnPageTest@4cf4d528</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.HomePageTest.verifyClickNEarnFetureDisplyed()'><b>verifyClickNEarnFetureDisplyed</b><br>Test class: com.NoBroker.testPages.HomePageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace314411620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace314411620'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.HomePageTest@78186a70</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifyClosePropertyPage()'><b>verifyClosePropertyPage</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace141110631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace141110631'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifyCloseVisitPage()'><b>verifyCloseVisitPage</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1446001495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1446001495'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.PropertyAdPageTest.verifyEditPropertyAd()'><b>verifyEditPropertyAd</b><br>Test class: com.NoBroker.testPages.PropertyAdPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1280641161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1280641161'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.PropertyAdPageTest@77846d2c</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.PropertyAdPageTest.verifyEnablePropertyForLeaseToNo()'><b>verifyEnablePropertyForLeaseToNo</b><br>Test class: com.NoBroker.testPages.PropertyAdPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace489411441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace489411441'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.PropertyAdPageTest@77846d2c</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.PropertyAdPageTest.verifyExitPostingAlert()'><b>verifyExitPostingAlert</b><br>Test class: com.NoBroker.testPages.PropertyAdPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1711185459", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1711185459'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.PropertyAdPageTest@77846d2c</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.PropertyAdPageTest.verifyFinishPostingButtonDisplayed()'><b>verifyFinishPostingButtonDisplayed</b><br>Test class: com.NoBroker.testPages.PropertyAdPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25936709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25936709'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.PropertyAdPageTest@77846d2c</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.NotificationsPageTest.verifyInboxDisplayed()'><b>verifyInboxDisplayed</b><br>Test class: com.NoBroker.testPages.NotificationsPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace172215878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace172215878'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.NotificationsPageTest@306279ee</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifyIncludeNearByPropertiesCheckbox()'><b>verifyIncludeNearByPropertiesCheckbox</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1527152775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1527152775'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifyListOfCityDropdown()'><b>verifyListOfCityDropdown</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace247162961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace247162961'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.HomePageTest.verifyNoBrokerLogoDisplayed()'><b>verifyNoBrokerLogoDisplayed</b><br>Test class: com.NoBroker.testPages.HomePageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1136005694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1136005694'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.HomePageTest@78186a70</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifyNoOfBedrooms()'><b>verifyNoOfBedrooms</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1863655430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1863655430'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.NotificationsPageTest.verifyNotificationsPage()'><b>verifyNotificationsPage</b><br>Test class: com.NoBroker.testPages.NotificationsPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace403547747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace403547747'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.NotificationsPageTest@306279ee</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.HomePageTest.verifyPackersNMoversfetureDisplayed()'><b>verifyPackersNMoversfetureDisplayed</b><br>Test class: com.NoBroker.testPages.HomePageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace638486177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace638486177'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.HomePageTest@78186a70</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.HomePageTest.verifyPayRentFetureDisplayed()'><b>verifyPayRentFetureDisplayed</b><br>Test class: com.NoBroker.testPages.HomePageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace426019904", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace426019904'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.HomePageTest@78186a70</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifyPriceRange()'><b>verifyPriceRange</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace976827477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace976827477'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifyPropertiesDescriptionDispaly()'><b>verifyPropertiesDescriptionDispaly</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2092709730", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2092709730'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifySearchLocality()'><b>verifySearchLocality</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1890266440", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1890266440'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifySheduleVisit()'><b>verifySheduleVisit</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace980364771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace980364771'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifyShortlistProperty()'><b>verifyShortlistProperty</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1261044180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1261044180'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.SignUpPageTest.verifySignUpTitle()'><b>verifySignUpTitle</b><br>Test class: com.NoBroker.testPages.SignUpPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793293778", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793293778'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.SignUpPageTest@548ad73b</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.SignUpPageTest.verifySignUpWithInvalidValue()'><b>verifySignUpWithInvalidValue</b><br>Test class: com.NoBroker.testPages.SignUpPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1966355106", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1966355106'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.SignUpPageTest@548ad73b</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.SignUpPageTest.verifySignUpWithValidValue()'><b>verifySignUpWithValidValue</b><br>Test class: com.NoBroker.testPages.SignUpPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace599782425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace599782425'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.SignUpPageTest@548ad73b</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.SignUpPageTest.verifyUserNameAndEmail()'><b>verifyUserNameAndEmail</b><br>Test class: com.NoBroker.testPages.SignUpPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1233327519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1233327519'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.SignUpPageTest@548ad73b</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.NotificationsPageTest.verifyUserTitle()'><b>verifyUserTitle</b><br>Test class: com.NoBroker.testPages.NotificationsPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace873309260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace873309260'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.NotificationsPageTest@306279ee</td></tr>
+<tr>
+<td title='com.NoBroker.testPages.BuyPropertyPageTest.verifypropertyStatus()'><b>verifypropertyStatus</b><br>Test class: com.NoBroker.testPages.BuyPropertyPageTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace324112183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace324112183'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field com.NoBroker.pages.NotificationsPage.selectChatButton to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(Unknown Source)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(Unknown Source)
+	at java.lang.reflect.Field.set(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.NoBroker.pages.NotificationsPage.&lt;init&gt;(NotificationsPage.java:13)
+	at com.NoBroker.testPages.NotificationsPageTest.setUp(NotificationsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+	at org.testng.TestRunner.run(TestRunner.java:580)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.NoBroker.testPages.BuyPropertyPageTest@4c762604</td></tr>
+</table><p>
+</body>
+</html>

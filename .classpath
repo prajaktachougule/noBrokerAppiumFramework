@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Prajakta/Prajakta/Appium/java-client-7.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vitha/.m2/repository/org/apache/maven/maven-project-builder/3.0-alpha-2/maven-project-builder-3.0-alpha-2.jar" sourcepath="C:/Users/vitha/.m2/repository/org/apache/maven/maven-project-builder/3.0-alpha-2/maven-project-builder-3.0-alpha-2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.apache.maven"/>
+			<attribute name="maven.artifactId" value="maven-project-builder"/>
+			<attribute name="maven.version" value="3.0-alpha-2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/vitha/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar" sourcepath="C:/Users/vitha/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.testng"/>
+			<attribute name="maven.artifactId" value="testng"/>
+			<attribute name="maven.version" value="7.1.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/Prajakta/Prajakta/Downloads/selenium-java-3-2/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vitha/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar" sourcepath="C:/Users/vitha/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.aventstack"/>
+			<attribute name="maven.artifactId" value="extentreports"/>
+			<attribute name="maven.version" value="4.0.9"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/vitha/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar" sourcepath="C:/Users/vitha/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.aventstack"/>
+			<attribute name="maven.artifactId" value="extentreports"/>
+			<attribute name="maven.version" value="3.1.5"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/vitha/.m2/repository/org/testng/testng/6.9.10/testng-6.9.10.jar" sourcepath="C:/Users/vitha/.m2/repository/org/testng/testng/6.9.10/testng-6.9.10-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.testng"/>
+			<attribute name="maven.artifactId" value="testng"/>
+			<attribute name="maven.version" value="6.9.10"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/vitha/.m2/repository/org/testng/testng/6.8/testng-6.8.jar" sourcepath="C:/Users/vitha/.m2/repository/org/testng/testng/6.8/testng-6.8-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.testng"/>
+			<attribute name="maven.artifactId" value="testng"/>
+			<attribute name="maven.version" value="6.8"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/vitha/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar" sourcepath="C:/Users/vitha/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="log4j"/>
+			<attribute name="maven.artifactId" value="log4j"/>
+			<attribute name="maven.version" value="1.2.17"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/vitha/.m2/repository/org/testng/testng/5.7/testng-5.7-jdk15.jar" sourcepath="C:/Users/vitha/.m2/repository/org/testng/testng/5.7/testng-5.7-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.testng"/>
+			<attribute name="maven.artifactId" value="testng"/>
+			<attribute name="maven.version" value="5.7"/>
+			<attribute name="maven.classifier" value="jdk15"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/InstallerAppDemoTest"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
